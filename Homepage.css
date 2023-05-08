@@ -1,0 +1,38 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    background-color: #081b29;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar ul li{
+    display: inline-block ;
+    line-height: 80px;
+    margin: 0 5px;
+}
+.navbar ul li a{
+    font-size: 17px;
+    padding: 7px 10px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+ .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(206, 95, 10); 
+    transition: .5s;
+}
