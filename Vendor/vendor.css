@@ -87,18 +87,21 @@ body{
     display: block;
   }
 /*
-Add item to cart with a small button 
+Show a small shopping cart
 */
-.addItem {
-    height: 50px;
-    width: 20px;
+.addItemIcon {
     position: absolute;
     bottom: 20px;
-    right: 30px;
+    right: 20px;
     cursor: pointer;
+    background-color: white;
+    border-radius: 50%;
 }
-.addItem img {
+.addItemIcon img {
     height: 50px;
     width: 50px;
     border-radius: 50%;
 }
+/*
+A form for the vendors to fill in info about their new products
+*/

@@ -13,18 +13,32 @@
         <img class="logo" src="/img/lazadalogo.jpeg" alt="Logo" width="250">
         <nav class="navbar">
             <ul>
-                <li><a href="/index.html">Home Page</a>
+                <li class="dropdown"><a href="#">Home Page</a>
+                
                 <li class="dropdown"><a href="#">Category</a>
-                    <div class="sub-menu">
-                        <div><a href="#">Electronic Devices</a></div>
-                        <div><a href="#">Electronic Accesories</a></div>
-                        <div><a href="#">Health & Beauty</a></div>
-                    </div>                  
-                 <li ><a href="#">Contact Us</a>
+                    <div class="dropdown-content">
+                        <a href="#">Electronic Devices</a>
+                        <a href="#">Electronic Accesories</a>
+                        <a href="#">Health & Family</a>  
+                    
+                 <li class="dropdown"><a href="#">Login/Register</a>
+                
+                    
             </ul> 
         </nav> 
     </header>
-    <div class="addItem">
-        <img src="imgforvendor/shoppingcart.jpg" alt="shoppingcart">
+    <div class="ShoppingCart">
+    <div class="addItemIcon">
+        <img src="imgforvendor/productsell.jpg" alt="shoppingcart">
     </div>
-    
+    <div class="AddItem">
+        <label for="ProductName">
+            Product Name: 
+        </label>
+        <input type="text" minlength="10" maxlength="20" class="textinput" required>
+        <label for="Price">
+            Price :
+        </label>
+        <input type="number" min="0">
+    </div>
+    </div>
