@@ -105,3 +105,13 @@ Show a small shopping cart
 /*
 A form for the vendors to fill in info about their new products
 */
+.AddItem {
+  display: none;
+}
+.VendorCart .show {
+  display: flex;
+}
+.textinput {
+  border-color: black;
+   
+}

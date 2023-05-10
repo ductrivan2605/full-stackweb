@@ -27,11 +27,11 @@
             </ul> 
         </nav> 
     </header>
-    <div class="ShoppingCart">
+    <div class="VendorCart">
     <div class="addItemIcon">
         <img src="imgforvendor/productsell.jpg" alt="shoppingcart">
     </div>
-    <div class="AddItem">
+    <form class="AddItem">
         <label for="ProductName">
             Product Name: 
         </label>
@@ -39,6 +39,14 @@
         <label for="Price">
             Price :
         </label>
-        <input type="number" min="0">
-    </div>
+        <input type="number" min="0" required class="textinput">
+        <label for="ProductImage">
+            Product Images: 
+        </label>
+        <input type="image" alt="addimage" multiple>
+        <label for="ProductDiscription">
+            Discription:
+        </label>
+        <input type="text" name="productdiscription" class="textinput">
+    </form>
     </div>
