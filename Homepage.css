@@ -15,12 +15,13 @@ body{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px;
+    padding: 10px;
     background: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .navbar ul li{
     display: inline-block ;
     line-height: 80px;
@@ -30,11 +31,6 @@ body{
     font-size: 17px;
     padding: 7px 10px;
     border-radius: 3px;
-    text-transform: uppercase;
-}
- .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: rgb(206, 95, 10); 
-    transition: .5s;
 }
 /* The dropdown container */
 .dropdown {
@@ -43,20 +39,15 @@ body{
   }
   
   /* Dropdown button */
-  .dropdown .dropbtn {
-    font-size: 20px;
-    border: none;
+.dropdown .dropbtn {
     outline: none;
-    color: white;
-    padding: 13px 0px;
     background-color: inherit;
-    font-family: inherit; /* Important for vertical align on mobile phones */
     margin: 0; /* Important for vertical align on mobile phones */
   }
   
   /* Add a red background color to navbar links on hover */
-  .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: rgb(255, 115, 7); 
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(243, 113, 13); 
   }
   /* Dropdown content (hidden by default) */
   .dropdown-content {
@@ -67,22 +58,97 @@ body{
   }
   
   /* Links inside the dropdown */
-  .dropdown-content a {
+.dropdown-content a {
     float: none;
-    color: white;
-    padding: 12px 16px;
+    color: rgba(15, 8, 227, 0.92);
     text-decoration: none;
-    display:block;
+    display:inline;
     text-align: left;
-    font-size: 18px;
+    background-color: white;
   }
   
   /* Add a grey background color to dropdown links on hover */
-  .dropdown-content a:hover {
-    background-color: rgb(43, 20, 1);
+.dropdown-content a:hover {
+    background-color: rgb(244, 109, 6); 
   }
   
   /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content {
     display: block;
   }
+
+.Category{
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+        
+}
+
+
+.fontcategory{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 40px;
+    background-color:#7a3411 ;
+    font-family: 'Apple Chancery', sans-serif ;
+    color: white;
+}
+
+
+.product{
+    width: 250px;
+    border: 3px;
+    border-color: #000000;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    border-style: solid;
+    background-color: #ffffff;
+}
+
+
+h2{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    word-wrap: break-word;
+    white-space: pre;
+    color: white;
+}
+
+
+
+.linktext{
+    width: fit-content;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+    word-wrap: break-word;
+    white-space: pre;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background: white;
+    height: 60px;
+    padding: 0 20px;
+
+}
+
+.footer ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer li {
+    margin-right: 20px;
+    font-size: 18px;
+} 
+
