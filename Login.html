@@ -1,36 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Login</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="Login.css">
+	<title>Document</title>
 </head>
 <body>
+	<!-- Header  -->
+    <header class="header">
+        <img class="logo" src="lazadalogo.jpeg" alt="Logo" width="250">
+        <nav class="navbar">
+            <ul>
+                <li class="dropdown"><a href="#">Home Page</a>
+                
+                <li class="dropdown"><a href="#">Category</a>
+                    <div class="dropdown-content">
+                        <a href="#">Electronic Devices</a>
+                        <a href="#">Electronic Accesories</a>
+                        <a href="#">Health & Family</a>  
+                    
+                 <li class="dropdown"><a href="Login.html">Login/Register</a>
+                
+                    
+            </ul> 
+        </nav> 
+    </header>
+    <br>
+    <hr width="100%"
+        color="white"
+        size="2px">
+    <br>
+		<div class="container">
+			<div>
+				<h1>Login</h1>
+			</div>
+				<form name="login" onsubmit="return validateForm() ;" method="post">
+						<ul>
+							<li>Username: <input class="username" type="text" name="username"></li>
+					
+							<li>Password: <input class="password" type="password" name="password"></li>
+						</ul>
+					<div>
+						<label for=""><input type="checkbox">Remember Me <a href="#">Forget Password ?</a></label>
+					</div>
+					<br>
+					<input type="button" class="submit" value="Log In" name="submit"  onclick="validate()">
+					<p>Don't have an account <a href="registerform.html">Register</a></p>
+					</div>
+				</form>
+			</div>
+		<script src="login.js"></script>
 
-<div class="container">
-<div class="header">
- <h1>Login</h1>
- </div>
-
-<form name="login" onsubmit="return validateForm() ;" method="post">
-
-<ul>
-<li>Username: <input class="username" type="text" name="username">
-</li>
-
-<li>Password <input class="password" type="password" name="password">
-</li>
-</ul>
-
-<div>
-	<label for=""><input type="checkbox">Remember Me  <a href="#">Forget Password</a></label>
-</div>
-<br>
-
-<input type="button" class="submit" value="Log In" name="submit"  onclick="validate()">
-<p>Don't have an account <a href="#">Register</a></p>
-</form>
-</div>
-<script src="login.js"></script>
-
+	<!-- Footer --> 
+    <footer class = footer>
+		<ul class="ul">
+			<li class="li"><a href="#">About</a></li>
+			<li class="li" ><a href="#">Copy right</a></li>
+			<li class="li"><a href="#">Privacy</a></li>
+			<li class="li"><a href="#">Help Links</a></li>
+		</ul>
+		</footer>
 </body>
 </html>
+
