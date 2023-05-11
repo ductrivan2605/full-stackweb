@@ -5,7 +5,7 @@ const app = express();
 const mongoose = require('mongoose');
 
 app.set('view engine', 'ejs');
-app.use(express.static("vendor"))
+app.use(express.static("public"))
 
 mongoose.connect('mongodb+srv://tri:e9ewNB2QBoId5SEa@fullstackwebproject.yauzkwr.mongodb.net/?retryWrites=true&w=majority')
 .then(() => console.log('Connected to MongoDB Atlas'))
