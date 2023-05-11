@@ -102,29 +102,4 @@ Show a small vendor adding icon
     width: 50px;
     border-radius: 50%;
 }
-/*
-A form for the vendors to fill in info about their new products
-*/
-.AddItem {
-  display: flex;
-  position: absolute;
-  background-color: white;
-  margin: 400px 950px;
-  width: 600px;
-  height: 200px;
-  flex-direction: column;
-  align-items: center;
-  color: orange;
-  border-radius: 25px;
-}
-.VendorCart .show {
-  display: flex;
-}
-.input {
-  border-color: black;
-  max-width: 250px;
-}
-#submit {
-  border-radius: 25px;
-  background-color: lightsalmon;
-}
+

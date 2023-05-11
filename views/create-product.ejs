@@ -1,20 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="vendor.css">
-    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="/vendor/vendor.css">
+    <title>Vendor</title>
 </head>
 <body>
-    <!-- Header  -->
-    <%- include (public/header)%>
     <!--Body-->
-    <div class="VendorCart">
-    <div class="addItemIcon">
-        <img src="imgforvendor/productsell.jpg" alt="shoppingcart">
-    </div>
     <form class="AddItem" action="/product" method="post">
         <h1>Add Product</h1>
         <label for="ProductName">
@@ -39,8 +30,5 @@
             Add Product
         </button>
     </form>
-    </div>
-    <!--Footer-->
-    <%- include (public/footer) %>
 </body>
 </html>

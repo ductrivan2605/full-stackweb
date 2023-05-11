@@ -1,10 +1,11 @@
 const express = require('express');
-const port = 27017;
+const ejs = require('ejs');
+const port = 3000;
 const app = express();
 const mongoose = require('mongoose');
 
 app.set('view engine', 'ejs');
-app.use(express.static)
+app.use(express.static("vendor"))
 
 mongoose.connect('mongodb+srv://tri:e9ewNB2QBoId5SEa@fullstackwebproject.yauzkwr.mongodb.net/?retryWrites=true&w=majority')
 .then(() => console.log('Connected to MongoDB Atlas'))
@@ -25,9 +26,6 @@ const productSchema = new mongoose.Schema({
   description:{
     type: String
   },
-  image:{
-    type: File
-  },
   categories: {
     type: String,
     enum: ['electronic device', 'electronic accessories', 'health and family']
@@ -42,7 +40,7 @@ const Product = mongoose.model('Product', productSchema);
 app.use(express.urlencoded({ extended: true }));
 
 // Show the vendor page
-app.get('/vendor', (req, res) => {
+app.get('/', (req, res) => {
   res.render('vendor');
 });
 
@@ -129,6 +127,6 @@ app.post('/product/:id/delete', (req, res) => {
 });
 
 
-app.listen(27017, () => {
-  console.log('Server is up on port 27017');
+app.listen(3000, () => {
+  console.log('Server is up on port 3000');
 });
