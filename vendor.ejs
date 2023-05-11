@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="vendor.css">
+    <title>Home</title>
+</head>
+<body>
+    <!-- Header  -->
+    <%- include (public/header)%>
+    <!--Body-->
+    <div class="VendorCart">
+    <div class="addItemIcon">
+        <img src="imgforvendor/productsell.jpg" alt="shoppingcart">
+    </div>
+    <form class="AddItem" action="/product" method="post">
+        <h1>Add Product</h1>
+        <label for="ProductName">
+            Product Name: 
+        </label>
+        <input type="text" minlength="10" maxlength="20" class="textinput" required>
+        <label for="Price">
+            Price :
+        </label>
+        <input type="number" min="0" required class="textinput">
+        <input type = "file" name = "upload" accept = "image/*" multiple style="color: black;">
+        <label for="ProductDescription">
+            Description:
+        </label>
+        <textarea name="description"></textarea><br>
+        <select name="categories">
+            <option value="EletronicsDevice">Eletronics Devices</option>
+            <option value="ElectronicAccessories">Electronic Accessories</option>
+            <option value="HealthandFamily">Health and Family   </option>
+          </select><br>
+        <button type="submit" id="submit">
+            Add Product
+        </button>
+    </form>
+    </div>
+    <!--Footer-->
+    <%- include (public/footer) %>
+</body>
+</html>
