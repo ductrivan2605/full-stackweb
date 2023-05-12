@@ -82,7 +82,7 @@ app.get('/product/:id/update', (req, res) => {
 // UPDATE - Update a product by ID
 app.post('/product/:id/update', (req, res) => {
   const updates = Object.keys(req.body);
-  const allowedUpdates = ['name', 'price', 'description', 'onSale', 'categories'];
+  const allowedUpdates = ['name', 'price', 'description', 'categories'];
   const isValidOperation = updates.every((update) => allowedUpdates.includes(update));
 
   if (!isValidOperation) {
