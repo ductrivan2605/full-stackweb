@@ -5,13 +5,14 @@ form {
     display: flex;
     position: absolute;
     background-color: white;
-    margin: 300px 850px;
+    margin: 100px 500px;
     width: 600px;
     height: 400px;
     flex-direction: column;
     align-items: center;
     color: orange;
     border-radius: 25px;
+    justify-content: space-evenly;
 }
 textarea {
     min-height: 1rem;
