@@ -4,44 +4,25 @@
     text-decoration: none;
 	font-family: 'Poppins',sans-serif;
 }
-body{
-	background-color: #081b29;
-  margin: 0;
-}
-li {
-	list-style-type: none;
-	padding-bottom: 5%;
-}
-
-input {
-	background-color: #333;
-	border: none;
-	border-radius: 2px;
-	text-align: left;
-	color: white;
-}
-
-h1{
-	font-family: sans-serif;
-	color: #F07334;
-}
-
-.container {
-    font-family: sans-serif;
+.wrapper-login{position: relative;
 	padding: 5px;
     border: 2px solid #F07334;
-    width: 24%;
+    width: 25%;
     text-align: center;
-    margin: auto;
+	margin: auto;
     border-radius: 12px;
     background-color: white;
     padding-bottom: 10px;
     -webkit-box-shadow: 3px 0px 10px 0px black;
     -moz-box-shadow: 3px 0px 10px 0px black;
     box-shadow: 3px 0px 10px 0px black;
-
 }
-
+.input{
+	border-radius: 12px;
+	font-family: "Arial";
+	font-size: 18px;
+	text-align: center;
+}
 .submit {
 	background-color: transparent;
 	color: black;
@@ -59,94 +40,4 @@ h1{
 
 .password, .username {
 width: 50%
-}
-
-.header{
-    position: relative;
-	width: 100%;
-	margin: 0;
-	padding: 0;
-    background: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.navbar ul li{
-    display: inline-block ;
-    line-height: 80px;
-    margin: 0 5px;
-}
-.navbar ul li a{
-    font-size: 17px;
-    padding: 7px 10px;
-    border-radius: 3px;
-}
-/* The dropdown container */
-.dropdown {
-    float: left;
-    overflow: hidden;
-  }
-  
-  /* Dropdown button */
-/* .dropdown .dropbtn {
-    outline: none;
-    background-color: inherit;
-    margin: 0; /* Important for vertical align on mobile phones 
-}*/
-
-  
-  /* Add a red background color to navbar links on hover */
-.navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: rgb(243, 113, 13); 
-  }
-  /* Dropdown content (hidden by default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    min-width: 16px;
-    z-index: 1;
-  }
-  
-  /* Links inside the dropdown */
-.dropdown-content a {
-    float: none;
-    color: rgba(15, 8, 227, 0.92);
-    text-decoration: none;
-    display: inline;
-
-    background-color: white;
-  }
-  
-  /* Add a grey background color to dropdown links on hover */
-.dropdown-content a:hover {
-    background-color: rgb(244, 109, 6); 
-  }
-  
-  /* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-    display: block;
-  }
-
-.footer {
-	position:absolute;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    background: white;
-    height: 60px;
-    padding: 0 20px;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-}
-.footer ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.footer li {
-    margin-right: 20px;
-    font-size: 18px;
 } 
