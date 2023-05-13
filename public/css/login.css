@@ -4,7 +4,7 @@
     text-decoration: none;
 	font-family: 'Poppins',sans-serif;
 }
-.wrapper-register{position: relative;
+.wrapper-login{position: relative;
 	padding: 5px;
     border: 2px solid #F07334;
     width: 25%;
@@ -17,28 +17,13 @@
     -moz-box-shadow: 3px 0px 10px 0px black;
     box-shadow: 3px 0px 10px 0px black;
 }
-.input-register{
-	display: flex;
-	flex-flow: column wrap;
-	align-items: center;
-	
-}
-li{
-	display: flex;
-	justify-content: space-between;
-}
-
-.registerbutton{
-	background-color: transparent;
-	color: black;
-	border: 1px solid black;
+.input{
 	border-radius: 12px;
-	width: 50%;
-	font-family: "Aria";
+	font-family: "Arial";
 	font-size: 18px;
-	text-align: center;;
+	text-align: center;
 }
-.registerbutton {
+.submit {
 	background-color: transparent;
 	color: black;
 	border: 1px solid black;
@@ -49,8 +34,10 @@ li{
 	text-align: center;;
 }
 
-.registerbutton:hover {
+.submit:hover {
 	background-color: #F07334;
 }
 
-
+.password, .username {
+width: 50%
+} 
