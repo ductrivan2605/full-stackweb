@@ -14,11 +14,11 @@ app.get('/login', (req,res)=>{
 app.get('/register', (req,res)=>{
     res.render('register')
 })
-app.get('/', (req, res) => {
+app.get('/vendor', (req, res) => {
     res.render('vendor');
 });
-  
 
+app.use(express.json())
 app.use(express.static('public'));
 
 app.listen(port, ()=>{
