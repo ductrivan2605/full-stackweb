@@ -12,6 +12,7 @@ body{
     justify-content: flex-end;
     bottom: 0;
     right: 0;
+    width: 100%;
 }
 .navbarf{
     display: flex;

@@ -18,13 +18,23 @@ const productSchema = new mongoose.Schema({
     required: true,
     maxlength: 20
   },
-  price:{
+  description:{
+    type: String
+  },
+  actual_Price: {
     type: Number,
     required: true,
     min: 0
   },
-  description:{
-    type: String
+  discount_Percentage: {
+    type: Number,
+    required: false,
+    min: 0
+  },
+  selling_price:{
+    type: Number,
+    required: true,
+    min: 0
   },
   categories: {
     type: String,
