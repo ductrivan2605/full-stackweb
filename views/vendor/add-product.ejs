@@ -7,7 +7,7 @@
 <body>
     <%- include ('partials/header')%>
     <!--Body-->
-    <form class="AddItem" action="/product" method="post">
+    <form action="/api/product" method="POST" id="add_product" class="AddItem">
         <h1>Add Product</h1>
         <input type="text" id="product-name" placeholder="product name">
         <textarea id="des" placeholder="detail description"></textarea>

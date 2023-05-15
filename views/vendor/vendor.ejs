@@ -13,7 +13,7 @@
     <!--Buttons-->
     <div>
         <button>
-            <a href="/view-products">View My Products</a>
+            <a href="/update-user?id=<%= users[i]._id%>">View My Products</a>
         </button>
     </div>
     <div class="addItemIcon">
@@ -22,6 +22,8 @@
         </a>
     </div>
     <!--Footer-->
+    <div>
     <%- include ('partials/footer')%>
+    </div>
 </body>
 </html>
