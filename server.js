@@ -31,5 +31,9 @@ app.use('/js', express.static(path.resolve(__dirname, "public/js")))
 
 // load routers
 app.use('/', require('./server/routes/router'))
+// Show the home page
+app.get('/', (req, res) => {
+    res.render('index');
+  });
 
 app.listen(PORT, ()=> { console.log(`Server is running on http://localhost:${PORT}`)});
