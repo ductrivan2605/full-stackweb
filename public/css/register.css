@@ -4,6 +4,7 @@
     text-decoration: none;
 	font-family: 'Poppins',sans-serif;
 }
+
 .wrapper-register{position: relative;
 	padding: 5px;
     border: 2px solid #F07334;
@@ -17,6 +18,7 @@
     -moz-box-shadow: 3px 0px 10px 0px black;
     box-shadow: 3px 0px 10px 0px black;
 }
+
 .input-register{
 	display: flex;
 	flex-flow: column wrap;
