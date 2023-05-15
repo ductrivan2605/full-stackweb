@@ -10,18 +10,16 @@ exports.homeRoutes = (req, res) => {
         .catch(err =>{
             res.send(err);
         })
-
-    
 }
 
-exports.add_user = (req, res) =>{
+exports.add_product = (req, res) =>{
     res.render('add_product');
 }
 
-exports.update_user = (req, res) =>{
+exports.update_product = (req, res) =>{
     axios.get('http://localhost:3000/api/products', { params : { id : req.query.id }})
         .then(function(productdata){
-            res.render("update_user", { products : productdata.data})
+            res.render("update_product", { products : productdata.data})
         })
         .catch(err =>{
             res.send(err);

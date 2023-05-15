@@ -10,12 +10,14 @@ body{
     background-color: #1495dfef;
 }
 .addItemIcon {
-    position: absolute;
+    position: fixed;
     bottom: 70px;
     right: 20px;
-    cursor: pointer;
     background-color: white;
     border-radius: 50%;
+}
+.addItemIcon a{
+    cursor: pointer;
 }
 .addItemIcon img {
     height: 50px;

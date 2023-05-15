@@ -33,7 +33,7 @@ const productSchema = new mongoose.Schema({
       enum: ['Phones', 'Watches', 'Toys']
     }
   });
-const Product = mongoose.model('product', productSchema);
+const Products = mongoose.model('Products', productSchema);
+const product = new Products(req.body);
 
-productSchema.index({ name: 'text', description: 'text' });
-module.exports = Product
+module.exports = Products

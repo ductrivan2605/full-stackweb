@@ -1,5 +1,4 @@
-var Userdb = require('../model/model');
-const Product = require('../models/Product');
+var Product = require('../models/product');
 
 // create and save new product
 exports.create = (req,res)=>{
@@ -10,7 +9,7 @@ exports.create = (req,res)=>{
     }
 
     // new product
-    const AddProduct = new Product({
+    const product = new Product({
         name : req.body.name,
         description : req.body.email,
         Image: req.body.Image,
@@ -21,8 +20,8 @@ exports.create = (req,res)=>{
     })
 
     // save product in the database
-    AddProduct
-        .save(AddProduct)
+    product
+        .save(product)
         .then(data => {
             //res.send(data)
             res.redirect('/add-product');
@@ -55,8 +54,8 @@ exports.find = (req, res)=>{
 
     }else{
         Product.find()
-            .then(AddProduct => {
-                res.send(AddProduct)
+            .then(product => {
+                res.send(product)
             })
             .catch(err => {
                 res.status(500).send({ message : err.message || "Error Occurred while retriving product information" })
@@ -78,7 +77,7 @@ exports.update = (req, res)=>{
     Product.findByIdAndUpdate(id, req.body, { useFindAndModify: false})
         .then(data => {
             if(!data){
-                res.status(404).send({ message : `Cannot Update product with ${id}. Maybe user not found!`})
+                res.status(404).send({ message : `Cannot Update product with ${id}. Maybe product not found!`})
             }else{
                 res.send(data)
             }
@@ -88,7 +87,7 @@ exports.update = (req, res)=>{
         })
 }
 
-// Delete a product with specified user id in the request
+// Delete a product with specified product id in the request
 exports.delete = (req, res)=>{
     const id = req.params.id;
 

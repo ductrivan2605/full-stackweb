@@ -24,10 +24,10 @@ route.get('/update-product', services.update_product)
 
 
 // API
-route.post('/api/users', controller.create);
-route.get('/api/users', controller.find);
-route.put('/api/users/:id', controller.update);
-route.delete('/api/users/:id', controller.delete);
+route.post('/api/products', controller.create);
+route.get('/api/products', controller.find);
+route.put('/api/products/:id', controller.update);
+route.delete('/api/products/:id', controller.delete);
 
 
 module.exports = route
