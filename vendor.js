@@ -20,6 +20,9 @@ app.use(express.urlencoded({ extended: true }));
 app.get('/', (req, res) => {
   res.render('vendor');
 });
+app.get('/add-product', (req,res)=> {
+  res.render('add-product');
+});
 app.listen(3000, () => {
   console.log('Server is up on port 3000');
 });
