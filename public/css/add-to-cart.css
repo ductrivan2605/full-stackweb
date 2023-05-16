@@ -24,17 +24,6 @@
   position: relative;
 }
 
-.items .box-container .box .sale-off {
-  position: absolute;
-  top: 1rem;
-  left: 1rem;
-  padding: 0.7rem 1rem;
-  font-size: 2rem;
-  color: var(--pink);
-  background: rgba(255, 51, 153, 0.05);
-  z-index: 1;
-  border-radius: 0.5rem;
-}
 
 .items .box-container .box .image {
   position: relative;
@@ -68,7 +57,7 @@
   line-height: 5rem;
   font-size: 2rem;
   width: 50%;
-  background: var(--pink);
+  background: black;
   color: #fff;
 }
 
