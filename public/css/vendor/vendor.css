@@ -11,10 +11,16 @@ body{
 }
 .addItemIcon {
     position: fixed;
+<<<<<<< HEAD
+=======
+    bottom: 70px;
+>>>>>>> 062910f75c8b4b7aa7e1d8ea07e643fefea97b05
     right: 20px;
-    cursor: pointer;
     background-color: white;
     border-radius: 50%;
+}
+.addItemIcon a{
+    cursor: pointer;
 }
 .addItemIcon img {
     height: 50px;

@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="/css/vendor/create-product.css">
+    <link rel="stylesheet" type="text/css" href="/css/vendor/add-product.css">
     <title>Vendor</title>
 </head>
 <body>
     <%- include ('partials/header')%>
     <!--Body-->
-    <form class="AddItem" action="/product" method="post">
+    <form action="/api/product" method="POST" id="add_product">
         <h1>Add Product</h1>
         <input type="text" id="product-name" placeholder="product name">
         <textarea id="des" placeholder="detail description"></textarea>
@@ -44,8 +44,7 @@
         <option value="Toys">Toys</option>
     </select>
     <div class="buttons">
-        <button class="btn" id="add-btn">add product</button>
-        <button class="btn" id="save-btn">save draft</button>
+        <button class="btn" type="submit" id="save-btn">Add Product</button>
     </div>
     </form>
 </body>
