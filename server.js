@@ -11,6 +11,11 @@ const app = express();
 dotenv.config( { path : 'config.env'} )
 const PORT = process.env.PORT || 3000
 
+// Show the vendor page
+app.get('/', (req, res) => {
+    res.render('index');
+  });
+
 // log requests
 app.use(morgan('tiny'));
 
