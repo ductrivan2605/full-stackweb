@@ -26,6 +26,11 @@ app.get('/', (req, res) => {
 app.get('/add-product', (req,res)=> {
   res.render('add-product');
 });
+app.get('/products', (req, res) => {
+  Product.find({})
+    .then(products => res.render('view-products', { products }))
+    .catch(error => res.send(error));
+});
 app.use('/', route)
 app.listen(3000)
 
