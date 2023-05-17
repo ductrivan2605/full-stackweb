@@ -1,41 +1,50 @@
 let cart = document.querySelectorAll(".cart-btn");
 let product = [
     {
-        name: 'Iphone 14',
-        price: '$999',
+        name: "iPhone 14 Pro Max",
+        price: $1099,
+        id: 1,
+        image: "pro1.png",
         incart: 0
 
     },
     {
-        name: 'Iphone 14 Pro',
-        price: '$1099',
+        name: "Samsung Galaxy Z Fold4",
+        price: $799,
+        id: 2,
+        image: "pro2.png",
         incart: 0
 
     },
     {
-        name: 'Iphone 14 Promax',
-        price: '$1299',
+        name: "OPPO Find N2 Flip",
+        price: $890,
+        id: 3,
+        image: "pro3.png",
         incart: 0
 
     },
     {
-        name: 'Pink Shirt',
-        price: '$12.00',
-        size: 'M',
+        name: "Harman Kardon Aura Studio 3 Bluetooth Speaker",
+        price: $250,
+        id: 4,
+        image: "pro4.png",
         incart: 0
 
     },
     {
-        name: 'Polo Shirt',
-        price: '$12.00',
-        size: 'M',
+        name: "Marshall Acton III Bluetooth Speaker",
+        price: $300,
+        id: 5,
+        image: "pro5.png",
         incart: 0
 
     },
     {
-        name: 'White Shirt',
-        price: '$12.00',
-        size: 'M',
+        name: "Samsung Sound Tower ST90B/XV",
+        price: $300,
+        id: 6,
+        image: "pro6.png",
         incart: 0
 
     }
