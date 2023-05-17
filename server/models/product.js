@@ -1,32 +1,25 @@
 const mongoose = require('mongoose');
 
 const productSchema = new mongoose.Schema({
-    name: {
+    product_name: {
       type: String,
       required: true,
       maxlength: 20
     },
-    description:{
+    product_description:{
       type: String
     },
-    image: {
-        type: String,
-        required: true
-    },
-    actual_price: {
+    image_name: String,
+    image_data: Buffer,
+    product_price:{
       type: Number,
       required: true,
       min: 0
     },
-    discount: {
+    product_stock: {
       type: Number,
-      required: false,
-      min: 0
-    },
-    sell_price:{
-      type: Number,
-      required: true,
-      min: 0
+      require: true,
+      min: 20
     },
     category: {
       type: String,

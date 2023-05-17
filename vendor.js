@@ -16,6 +16,9 @@ mongoose.connect('mongodb+srv://tri:e9ewNB2QBoId5SEa@fullstackwebproject.yauzkwr
 // Use the `express.urlencoded` middleware to parse incoming form data
 app.use(express.urlencoded({ extended: true }));
 
+// route
+let route = require('./server/routes/router')
+
 // Show the vendor page
 app.get('/', (req, res) => {
   res.render('vendor');
@@ -23,6 +26,6 @@ app.get('/', (req, res) => {
 app.get('/add-product', (req,res)=> {
   res.render('add-product');
 });
-app.listen(3000, () => {
-  console.log('Server is up on port 3000');
-});
+app.use('/', route)
+app.listen(3000)
+

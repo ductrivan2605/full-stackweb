@@ -15,7 +15,7 @@ $("#update_product").submit(function(event){
 
 
     var request = {
-        "url" : `http://localhost:3000/api/products/${data.id}`,
+        "url" : `http://localhost:3000/api/product/${data.id}`,
         "method" : "PUT",
         "data" : data
     }

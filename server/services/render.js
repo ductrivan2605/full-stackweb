@@ -17,7 +17,7 @@ exports.add_product = (req, res) =>{
 }
 
 exports.update_product = (req, res) =>{
-    axios.get('http://localhost:3000/api/products', { params : { id : req.query.id }})
+    axios.get('http://localhost:3000/api/product', { params : { id : req.query.id }})
         .then(function(productdata){
             res.render("update_product", { products : productdata.data})
         })

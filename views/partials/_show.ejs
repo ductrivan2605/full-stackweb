@@ -1,5 +1,5 @@
 <h1>Products</h1>
-<form action="/" method="post">
+<form action="/api/product/:id" method="post">
     <table class="">
       <tr>
         <th>Name</th>
@@ -9,13 +9,13 @@
         <th>Update</th>
         <th>Delete</th>
       </tr>
-      <% for(var i = 0; i < products.length; i++) { %>
+      <% for(var i = 0; i < product.length; i++) { %>
         <tr>
             <td><%= i + 1 %></td>
-            <td><%= products[i].name %></td>
-            <td><%= products[i].price %></td>
-            <td><%= products[i].description %></td>
-            <td><%= products[i].categories %></td>
+            <td><%= product[i].name %></td>
+            <td><%= product[i].price %></td>
+            <td><%= product[i].description %></td>
+            <td><%= product[i].categories %></td>
             <td>
                 <a href="/update-user?id=<%= users[i]._id%>" class="btn border-shadow update">
                     <span class="text-gradient"><i class="fas fa-pencil-alt"></i></span>

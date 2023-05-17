@@ -9,22 +9,18 @@ exports.create = (req,res)=>{
     }
 
     // new product
-    const product = new Product({
-        name : req.body.name,
-        description : req.body.email,
-        Image: req.body.Image,
-        actual_price : req.body.actual_price,
-        discount_price : req.body.discount_price,
-        quantity : req.body.quantity,
-        category : req.body.category,
-    })
+    const product = new Product(req.body);
+        
 
     // save product in the database
     product
         .save(product)
         .then(data => {
-            //res.send(data)
+            // res.send(data)
             res.redirect('/add-product');
+            res.send({
+                message : "Product was added successfully!"
+            })
         })
         .catch(err =>{
             res.status(500).send({
