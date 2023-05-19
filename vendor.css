@@ -1,0 +1,25 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    background-color: #1495dfef;
+}
+.addItemIcon {
+    position: absolute;
+    bottom: 70px;
+    right: 20px;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 50%;
+}
+.addItemIcon img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
