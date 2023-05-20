@@ -17,6 +17,12 @@ const PORT = process.env.PORT || 3000
 app.get('/', (req, res) =>{
   res.render('home')
 })
+// Show the add product form
+app.get('/add-product', (req, res) => {
+  res.render('add-product')
+})
+// show the product age
+app.get('/', )
 // app.get('/', (req, res) => {
 //     res.render('partials/header');
 //   });
