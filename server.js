@@ -31,6 +31,9 @@ app.get('/login', (req,res) => {
 app.get('/register', (req,res) => {
   res.render('register')
 })
+app.get('/shipper', (req,res) =>{
+  res.render('shipper')
+})
 // app.get('/', (req, res) => {
 //     res.render('partials/header');
 //   });
