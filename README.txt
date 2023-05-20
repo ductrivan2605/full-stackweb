@@ -19,7 +19,7 @@ Explain how to start/run the website:
 Step 1: Turn on terminal in VSC
 Step 2: type npm i express mongoose ejs dotenv body-parser path morgan axios bcryptjs validator nodemon
 Step 3: press Enter and wait for the modules to be installed
-Step 4: node server.js to start the website and access it through localhost:3000
+Step 4: node index.js to start the website and access it through localhost:3000
 
 ----------------------------------------------------------
 Contribution: 

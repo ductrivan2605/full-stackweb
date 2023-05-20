@@ -46,19 +46,19 @@ app.use(morgan('tiny'));
 // parse request to body-parser
 app.use(bodyparser.urlencoded({ extended : true}))
 //show product
-// app.post('/api/product', (req, res) => {
-//   console.log(req.body);
-//   const product = new Products(req.body);
-//   product.save()
-//     .then(() => res.redirect('/view-products'))
-//     .catch(error => res.send(error));
-// });
+app.post('/api/product', (req, res) => {
+  console.log(req.body);
+  const product = new Products(req.body);
+  product.save()
+    .then(() => res.redirect('/add-to-cart'))
+    .catch(error => res.send(error));
+});
 
-// app.get('/view-products', (req, res) => {
-//   Products.find({})
-//     .then(products => res.render('view-products', { products }))
-//     .catch(error => res.send(error));
-// });
+app.get('/add-to-cart', (req, res) => {
+  Products.find({})
+    .then(products => res.render('view-products', { products }))
+    .catch(error => res.send(error));
+});
 // set view engine
 app.set("view engine", "ejs")
 //app.set("views", path.resolve(__dirname, "views/ejs"))
