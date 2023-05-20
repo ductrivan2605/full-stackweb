@@ -18,10 +18,12 @@ Author: Nguyen Tung Bao Thach (s3929174), Van Duc Tri (s3978233), Nguyen Duong T
 } */
 .addItemIcon {
     position: fixed;
+    bottom: 20px;
     right: 20px;
     cursor: pointer;
     background-color: white;
     border-radius: 50%;
+    background-color: orange;
 }
 .addItemIcon img {
     height: 50px;

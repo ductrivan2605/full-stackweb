@@ -22,7 +22,15 @@ app.get('/add-product', (req, res) => {
   res.render('add-product')
 })
 // show the product age
-app.get('/', )
+app.get('/add-to-cart', (req,res)=> {
+  res.render('add-to-cart')
+})
+app.get('/login', (req,res) => {
+  res.render('login')
+})
+app.get('/register', (req,res) => {
+  res.render('register')
+})
 // app.get('/', (req, res) => {
 //     res.render('partials/header');
 //   });
