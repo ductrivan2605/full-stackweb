@@ -43,6 +43,7 @@ Author: Nguyen Tung Bao Thach (s3929174), Van Duc Tri (s3978233), Nguyen Duong T
 
 .submit:hover {
 	background-color: #F07334;
+	cursor: pointer;
 }
 
 .password, .username {
