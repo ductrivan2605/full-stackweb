@@ -2,6 +2,7 @@ const express = require('express');
 const route = express.Router()
 const services = require('../services/render');
 const controller = require('../controller/controller');
+const Products = require('../models/product')
 
 /**
  *  @description Root Route
@@ -21,10 +22,15 @@ route.get('/add-product', services.add_product)
  */
 route.get('/update-product', services.update_product)
 
+// route.get('/view-product', services.display_product)
+// route.get('/view-product', (req,res) => { 
+//     Products.find({})
+//     .then(products => res.render('view-products', {products}))
+// })
 
 // API
 route.post('/api/product', controller.create);
-route.get('/api/product', controller.find);
+route.get('/view-products', controller.find);
 route.put('/api/product/:id', controller.update);
 route.delete('/api/product/:id', controller.delete);
 
