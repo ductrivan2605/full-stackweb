@@ -23,13 +23,23 @@ Step 4:
 ----------------------------------------------------------
 Contribution: 
 
-	Nguyen Tung Bao Thach (S3929174): 33.33%
+	Nguyen Tung Bao Thach (S3929174): 30%
 		
 
-	Nguyen Duong Truong Thinh (s3914412): 33.33%
+	Nguyen Duong Truong Thinh (s3914412): 30%
 		
 
-	Van Duc Tri (s3978223): 33.33%
+	Van Duc Tri (s3978223): 40%
+
+
+	Vu Bac Son (s3938019) : 0%
+
+
+	Duong Tran Le Truong (s3807528) :0%
+
+
+
+
         
 
 	
