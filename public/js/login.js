@@ -19,8 +19,9 @@ if (password == passwordArray [i])
 if(valid)
 {
    alert("Login was successful");
-   app.get('/home', (req,res)=>{
-    res.render('home')
+   window.location = "add-to-cart"
+   app.get('/add-to-cart', (req,res)=>{
+    res.render('add-to-cart')
 })
    return false ;
 }
