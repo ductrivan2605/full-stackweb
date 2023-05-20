@@ -1,0 +1,50 @@
+/* <!-- RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 
+Author: Nguyen Tung Bao Thach (s3929174), Van Duc Tri (s3978233), Nguyen Duong Truong Thinh (s3914412)
+/* Acknowledgement: Acknowledge the resources that you use show in the report. --> */ 
+
+*{
+	list-style: none;
+	box-sizing: border-box;
+    text-decoration: none;
+	font-family: 'Poppins',sans-serif;
+}
+.wrapper-login{
+	position: relative;
+	padding: 50px;
+	margin: 50px auto;
+    border: 2px solid #F07334;
+    width: 25%;
+    text-align: center;
+    border-radius: 12px;
+    background-color: white;
+    -webkit-box-shadow: 3px 0px 10px 0px black;
+    -moz-box-shadow: 3px 0px 10px 0px black;
+    box-shadow: 3px 0px 10px 0px black;
+}
+.input{
+	border-radius: 12px;
+	font-family: "Arial";
+	font-size: 18px;
+	text-align: center;
+}
+.submit {
+	background-color: transparent;
+	color: black;
+	border: 1px solid black;
+	border-radius: 12px;
+	width: 50%;
+	font-family: "Aria";
+	font-size: 18px;
+	text-align: center;;
+}
+
+.submit:hover {
+	background-color: #F07334;
+}
+
+.password, .username {
+width: 50%
+}
