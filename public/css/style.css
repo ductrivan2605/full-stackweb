@@ -13,9 +13,9 @@ Author: Nguyen Tung Bao Thach (s3929174), Van Duc Tri (s3978233), Nguyen Duong T
     text-decoration: none;
     font-family: 'Poppins',sans-serif;
 }
-body{
+/* body{
     background-color: #081b29;
-}
+} */
 
 .header{
     position: relative;
@@ -137,7 +137,7 @@ h2{
 }
 
 /* Footer */
-.footer {
+/* .footer {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -160,7 +160,7 @@ h2{
 .footer li {
     margin-right: 20px;
     font-size: 18px;
-} 
+}  */
 .addItemIcon {
     position: fixed;
     right: 20px;

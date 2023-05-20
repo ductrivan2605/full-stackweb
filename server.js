@@ -1,10 +1,3 @@
-/* <!-- RMIT University Vietnam
-Course: COSC2430 Web Programming
-Semester: 2023A
-Assessment: Assignment 
-Author: Nguyen Tung Bao Thach (s3929174), Van Duc Tri (s3978233), Nguyen Duong Truong Thinh (s3914412)
-/* Acknowledgement: Acknowledge the resources that you use show in the report. --> */ 
-
 const express = require('express');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
@@ -21,9 +14,15 @@ mongoose.connect('mongodb+srv://tri:e9ewNB2QBoId5SEa@fullstackwebproject.yauzkwr
 dotenv.config( { path : 'config.env'} )
 const PORT = process.env.PORT || 3000
 // Show the home page
-app.get('/', (req, res) => {
-    res.render('home');
-  });
+app.get('/', (req, res) =>{
+  res.render('home')
+})
+// app.get('/', (req, res) => {
+//     res.render('partials/header');
+//   });
+// app.get('/', (req, res) => {
+//   res.render('partials/footer')
+// })
 
 // log requests
 app.use(morgan('tiny'));
@@ -37,6 +36,7 @@ app.post('/api/product', (req, res) => {
     .then(() => res.redirect('/view-products'))
     .catch(error => res.send(error));
 });
+
 app.get('/view-products', (req, res) => {
   Products.find({})
     .then(products => res.render('view-products', { products }))
@@ -47,14 +47,12 @@ app.set("view engine", "ejs")
 //app.set("views", path.resolve(__dirname, "views/ejs"))
 
 // load public
-app.use(express.static('public'))
+app.use('/css', express.static(path.resolve(__dirname, "public/css")))
+app.use('/img', express.static(path.resolve(__dirname, "public/img")))
+app.use('/js', express.static(path.resolve(__dirname, "public/js")))
 // define route
 let route = require('./server/routes/router');
 const Products = require('./server/models/product');
-// Show the home page
-app.get('/', (req, res) => {
-    res.render('index');
-  });
 app.use('/', route)
 app.listen(PORT, ()=> { console.log(`Server is running on http://localhost:${PORT}`)});
 
