@@ -61,5 +61,7 @@ li{
 .registerbutton:hover {
 	background-color: #F07334;
 }
-
+@media only screen and (max-width: 1023px),(min-width: 768px) {
+}
+@media only screen and (max-width: 767px){}
 

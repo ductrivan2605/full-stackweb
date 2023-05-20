@@ -11,15 +11,15 @@ Author: Nguyen Tung Bao Thach (s3929174), Van Duc Tri (s3978233), Nguyen Duong T
     text-decoration: none;
 	font-family: 'Poppins',sans-serif;
 }
-.wrapper-login{position: relative;
-	padding: 5px;
+.wrapper-login{
+	position: relative;
+	padding: 50px;
+	margin: 50px auto;
     border: 2px solid #F07334;
     width: 25%;
     text-align: center;
-	margin: auto;
     border-radius: 12px;
     background-color: white;
-    padding-bottom: 10px;
     -webkit-box-shadow: 3px 0px 10px 0px black;
     -moz-box-shadow: 3px 0px 10px 0px black;
     box-shadow: 3px 0px 10px 0px black;
@@ -43,9 +43,11 @@ Author: Nguyen Tung Bao Thach (s3929174), Van Duc Tri (s3978233), Nguyen Duong T
 
 .submit:hover {
 	background-color: #F07334;
-	cursor: pointer;
 }
 
 .password, .username {
 width: 50%
 }
+@media only screen and (max-width: 1023px),(min-width: 768px) {
+}
+@media only screen and (max-width: 767px){}
