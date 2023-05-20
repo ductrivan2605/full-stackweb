@@ -1,4 +1,12 @@
 /* Style the search box inside the navigation bar */
+/* <!-- RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 
+Author: Nguyen Tung Bao Thach (s3929174), Van Duc Tri (s3978233), Nguyen Duong Truong Thinh (s3914412)
+/* Acknowledgement: Acknowledge the resources that you use show in the report. --> */ 
+
+
 .search-click {
     border: 1px solid #ccc;
     outline: none;
