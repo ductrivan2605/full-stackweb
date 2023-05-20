@@ -6,7 +6,7 @@
   </head>
   <body>
     <h1>Update Product</h1>
-    <form method="post" id="update_product">
+    <form method="put" id="update_product">
       <label for="name">Name:</label>
       <input type="text" id="name" name="name" value="<%= product.name %>">
       <label for="price">Price:</label>
@@ -16,9 +16,9 @@
       <label for="categories">Categories:</label>
       <select id="categories" name="categories">
         <option value="">Select a category</option>
-        <option value="eletronics" <% if (product.categories === "eletronics devices") { %>selected<% } %>>Eletronics Devices</option>
-        <option value="beauty products" <% if (product.categories === "electronic accessories") { %>selected<% } %>>Electronics Devices</option>
-        <option value="toys" <% if (product.categories === "health and family") { %>selected<% } %>>Health and Family</option>
+        <option value="eletronics" <% if (product.categories === "phone") { %>selected<% } %>>Phone</option>
+        <option value="beauty products" <% if (product.categories === "watches") { %>selected<% } %>>Watches</option>
+        <option value="toys" <% if (product.categories === "toys") { %>selected<% } %>>Toys</option>
       </select>
       <input type="submit" value="Update">
     </form>

@@ -1,0 +1,25 @@
+<table>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Image</th>
+      <th>Price</th>
+      <th>Stock</th>
+      <th>Categories</th>
+      <th>Update</th>
+      <th>Delete</th>
+    </tr>
+    <% products.forEach(function(product) { %>
+      <tr>
+        <li><%= product.product_name %></li>
+        <li><%= product.product_description %></li>
+        <li><img src="/img/<%= product.id %>" /></li>
+        <li><%= product.product_price %></li>
+        <li><%= product.product_stock %></li>
+        <li><%= product.category %></li>
+        <td><a href="/product/<%= product.id %>/update">Click here</a> </td>
+        <td><a href="/product/<%= product.id %>/delete">Click here</a></td>
+      </tr>
+    <% }); %>
+  </table>
+<script src="/server/controller/controller.js"></script>

@@ -9,8 +9,10 @@ const productSchema = new mongoose.Schema({
     product_description:{
       type: String
     },
-    image_name: String,
-    image_data: Buffer,
+    Image: { 
+      data: Buffer,
+      type: String
+    },
     product_price:{
       type: Number,
       required: true,
