@@ -11,16 +11,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        .addItemIcon {
+    position: fixed;
+    right: 20px;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 50%;
+}
+.addItemIcon img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+    padding: 50px;
+
+}
+.col-2 img{
+    max-width: 100%;
+    padding:50px 0;
+}
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+    </style>
     <title>Lazada</title>
 </head>
 <body>
     <%- include ('partials/header')%>
+<!-- Display products -->
 <!-- Add Products -->
 <div class="addItemIcon">
     <a href="/add-product">
     <img src="/img/productsell.jpg" alt="shoppingcart">
     </a>
+</div>
+<div class="row">
+    <div class="col-2">
+        <h1> Give Your Workout<br>A New Style</h1>
+        <p>iaubcfouqbwofbqaowcboabcooauefoqiwfoiqcqowuboqcb<br>iaubsacoboqabvoiqabwovcoqpiqwfc</p>
+        <a href="/add-to-cart" class="btn">Explore Now</a>
+    </div>
+    <div class="col-2">
+        <img src="/img/pro1.png" alt="product1">
+    </div>
+</div>
 </div>
   <!-- Footer -->
     <%- include ('partials/footer')%>
