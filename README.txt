@@ -25,10 +25,8 @@ Step 4: node server.js to start the website and access it through localhost:3000
 Contribution: 
 
 	Nguyen Tung Bao Thach (S3929174): 30%
-		
 
 	Nguyen Duong Truong Thinh (s3914412): 30%
-		
 
 	Van Duc Tri (s3978223): 40%
 
